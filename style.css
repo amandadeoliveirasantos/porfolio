@@ -29,7 +29,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1000;
 }
 
@@ -427,6 +427,48 @@ footer {
   transform: scale(1.1);
   color: #7b65d9; 
 }
+}
+
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .servicos, .etapas {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .sobre img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
 }
 
 
